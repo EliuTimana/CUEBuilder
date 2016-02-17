@@ -12,6 +12,7 @@
         }
         textarea{
             height: 100% !important;
+            font-family: monospace !important;
         }
     </style>
     <title>CUE Builder</title>
@@ -38,7 +39,7 @@
                     </div>
                     <div class="form-group">
                         <label for="tracklist">Tracklist</label>
-                        <textarea name="tracklist" id="tracklist" cols="30" rows="10" data-ng-model="tracklist"></textarea>
+                        <textarea name="tracklist" id="tracklist" cols="30" rows="25" data-ng-model="cue.tracklist"></textarea>
                     </div>
                 </fieldset>
             </form>
@@ -46,7 +47,7 @@
         <section class="grid-65">
             <div class="form-group">
                 <label for="output">Output</label>
-                <textarea name="output" id="output" cols="30" rows="10" readonly>{{cue.output}}</textarea>
+                <textarea name="output" id="output" cols="30" rows="40" readonly>{{cue.output}}</textarea>
             </div>
         </section>
     </div>
